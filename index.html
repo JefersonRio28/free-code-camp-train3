@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav id="navbar" class="nav-content">
+        <div class="container">
+            <a href="https://www.python.org/"><img id="logo" class="pythonLogo" alt="Python Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png?20220821155029"></a>
+            <header id="nav-header">Python</header>
+        </div>
+        <ul class="content">
+            <li class="nav-itens"><a class="nav-link" href="#python">Python</a></li>
+            <li class="nav-itens"><a class="nav-link" href="#history">History</a></li>
+            <li class="nav-itens"><a class="nav-link" href="#design_philosophy_and_features">Design philosophy and features</a></li>
+            <li class="nav-itens"><a class="nav-link" href="#development">Development</a></li>
+            <li class="nav-itens"><a class="nav-link" href="#programming_examples">Programming examples</a></li>
+            <li class="nav-itens"><a class="nav-link" href="#references">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc"> 
+      <section id="python" class="main-section">
+        <header class="main-content">Python</header>
+        <article>   
+            <p class="paragraph">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+            <p class="paragraph">Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+            <p class="paragraph">Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.</p>
+            <p class="paragraph">Python consistently ranks as one of the most popular programming languages.</p>
+        </article>
+      </section>
+      <section id="history" class="main-section">
+        <header class="main-content">History</header>
+        <article> 
+            <p class="paragraph">Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling (from the start plus new capabilities in Python 3.11) and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's "benevolent dictator for life", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a five-member Steering Council to lead the project.</p>
+            <p class="paragraph">Python 2.0 was released on 16 October 2000, with many major new features. Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x and 2.7.x. Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3.</p>
+            <p class="paragraph">Python 2.7's end-of-life was initially set for 2015, then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3. No further security patches or other improvements will be released for it. Currently only 3.7 and later are supported. In 2021, Python 3.9.2 and 3.8.8 were expedited as all versions of Python (including 2.7) had security issues leading to possible remote code execution and web cache poisoning.</p>
+            <p class="paragraph">In 2022, Python 3.10.4 and 3.9.12 were expedited[58] and 3.8.13, and 3.7.13, because of many security issues. When Python 3.9.13 was released in May 2022, it was announced that the 3.9 series (joining the older series 3.8 and 3.7) will only receive security fixes going forward. On September 7, 2022, four new releases were made due to a potential denial-of-service attack: 3.10.7, 3.9.14, 3.8.14, and 3.7.14.</p>
+            <p class="paragraph">As of November 2022, Python 3.11.0 is the current stable release and among the notable changes from 3.10 are that it is 10–60% faster and significantly improved error reporting.</p>
+            <p class="paragraph">Python 3.12 (alpha 2) has improved error messages.</p>
+        </article>
+      </section>
+      <section id="design_philosophy_and_features" class="main-section">
+        <header class="main-content">Design philosophy and features</header>
+        <article> 
+            <p class="paragraph">Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of their features support functional programming and aspect-oriented programming (including metaprogramming and metaobjects). Many other paradigms are supported via extensions, including design by contract and logic programming.</p>
+            <p class="paragraph">Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage collector for memory management. It uses dynamic name resolution (late binding), which binds method and variable names during program execution.</p>
+            <p class="paragraph">Its design offers some support for functional programming in the Lisp tradition. It has filter,mapandreduce functions; list comprehensions, dictionaries, sets, and generator expressions. The standard library has two modules (itertools and functools) that implement functional tools borrowed from Haskell and Standard ML.</p>
+            <p class="paragraph">Its core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:</p>
+            <ul class="list">
+            <li class="list-itens">Beautiful is better than ugly.</li>
+            <li class="list-itens">Explicit is better than implicit.</li>
+            <li class="list-itens">Simple is better than complex.</li>
+            <li class="list-itens">Complex is better than complicated.</li>
+            <li class="list-itens">Readability counts.</li>
+            </ul>
+            <p class="paragraph">Rather than building all of its functionality into its core, Python was designed to be highly extensible via modules. This compact modularity has made it particularly popular as a means of adding programmable interfaces to existing applications. Van Rossum's vision of a small core language with a large standard library and easily extensible interpreter stemmed from his frustrations with ABC, which espoused the opposite approach.</p>
+            <p class="paragraph">Python strives for a simpler, less-cluttered syntax and grammar while giving developers a choice in their coding methodology. In contrast to Perl's "there is more than one way to do it" motto, Python embraces a "there should be one—and preferably only one—obvious way to do it" philosophy. Alex Martelli, a Fellow at the Python Software Foundation and Python book author, wrote: "To describe something as 'clever' is not considered a compliment in the Python culture."</p>
+            <p class="paragraph">Python's developers strive to avoid premature optimization and reject patches to non-critical parts of the CPython reference implementation that would offer marginal increases in speed at the cost of clarity. When speed is important, a Python programmer can move time-critical functions to extension modules written in languages such as C; or use PyPy, a just-in-time compiler. Cython is also available, which translates a Python script into C and makes direct C-level API calls into the Python interpreter.</p>
+            <p class="paragraph">Python's developers aim for it to be fun to use. This is reflected in its name—a tribute to the British comedy group Monty Python—and in occasionally playful approaches to tutorials and reference materials, such as the use of the terms "spam", and "eggs" (a reference to a Monty Python sketch) in examples, instead of the often-used "foo", and "bar".</p>
+            <p class="paragraph">A common neologism in the Python community is pythonic, which has a wide range of meanings related to program style. "Pythonic" code may use Python idioms well, be natural or show fluency in the language, or conform with Python's minimalist philosophy and emphasis on readability. Code that is difficult to understand or reads like a rough transcription from another programming language is called unpythonic.</p>
+            <p class="paragraph">Python users and admirers, especially those considered knowledgeable or experienced, are often referred to as Pythonistas.</p>
+        </article> 
+      </section>
+      <section id="development" class="main-section">
+        <header class="main-content">Development</header>
+        <article> 
+            <p class="paragraph">Python's development is conducted largely through the Python Enhancement Proposal (PEP) process, the primary mechanism for proposing major new features, collecting community input on issues, and documenting Python design decisions. Python coding style is covered in PEP 8. Outstanding PEPs are reviewed and commented on by the Python community and the steering council.</p>
+            <p class="paragraph">Enhancement of the language corresponds with the development of the CPython reference implementation. The mailing list python-dev is the primary forum for the language's development. Specific issues were originally discussed in the Roundup bug tracker hosted at by the foundation. In 2022, all issues and discussions were migrated to GitHub. Development originally took place on a self-hosted source-code repository running Mercurial, until Python moved to GitHub in January 2017.</p>
+            <p class="paragraph">CPython's public releases come in three types, distinguished by which part of the version number is incremented:</p>
+            <ul class="list">
+            <li class="list-itens">Backward-incompatible versions, where code is expected to break and needs to be manually ported. The first part of the version number is incremented. These releases happen infrequently—version 3.0 was released 8 years after 2.0. According to Guido van Rossum, a version 4.0 is very unlikely to ever happen.</li>
+            <li class="list-itens">Major or "feature" releases are largely compatible with the previous version but introduce new features. The second part of the version number is incremented. Starting with Python 3.9, these releases are expected to happen annually. Each major version is supported by bug fixes for several years after its release.</li>
+            <li class="list-itens">Bugfix releases, which introduce no new features, occur about every 3 months and are made when a sufficient number of bugs have been fixed upstream since the last release. Security vulnerabilities are also patched in these releases. The third and final part of the version number is incremented.</li>
+            </ul>
+            <p class="paragraph">Many alpha, beta, and release-candidates are also released as previews and for testing before final releases. Although there is a rough schedule for each release, they are often delayed if the code is not ready. Python's development team monitors the state of the code by running the large unit test suite during development.</p>
+            <p class="paragraph">The major academic conference on Python is PyCon. There are also special Python mentoring programs, such as Pyladies.</p>
+            <p class="paragraph">Python 3.10 deprecated wstr (to be removed in Python 3.12; meaning Python extensions need to be modified by then), and added pattern matching to the language.</p>
+        </article> 
+      </section>
+    <section id="programming_examples" class="main-section">
+        <header class="main-content">Programming examples</header>
+        <article>  
+            <p class="paragraph">Hello world program:</p>
+            <code class="language-python">
+                <span class="hello-world">
+                    print('Hello, world!')
+                </span>
+            </code>
+            <p class="paragraph">Program to calculate the factorial of a positive integer:</p>
+            <code class="language-python">
+                <span class="factorial">
+                    n = int(input('Type a number, and its factorial will be printed: '))
+                    <br>
+                    <br>
+                    if n < 0:
+                    <br>
+                    &nbsp;&nbsp;ValueError('You must enter a non-negative integer')
+                    <br>
+                    <br>
+                    factorial = 1
+                    <br>
+                    <br>
+                    for i in range(2, n + 1):
+                    <br>
+                    &nbsp;&nbsp;factorial *= i
+                    <br>
+                    <br>
+                    print(factorial)
+                </span>
+            </code>
+            <p class="paragraph">Program to calculate sum of two integers:</p>
+            <code class="language-python">
+                <span class="sum">
+                    num1 = 1.5
+                    <br>
+                    num2 = 6.3
+                    <br>
+                    <br>
+                    sum = num1 + num2
+                </span>
+            </code>
+            <p class="paragraph">Program to Find the Square Root</p>            
+            <code class="language-python">
+                <span class="root">
+                    num = 8
+                    <br>
+                    <br>
+                    num_sqrt = num ** 0.5
+                </span>
+            </code>
+            <p class="paragraph">Program to Generate a Random Number</p> 
+            <code class="language-python">
+                <span class="random_number">
+                    import random
+                    <br>
+                    <br>
+                    print(random.randint(0,9))
+                </span>
+            </code>
+            <p></p>
+        </article>
+    </section>  
+    <section id="references" class="main-section">
+        <header class="main-content">References</header>
+        <ul>
+            <li>All the documentation in this page is taken from <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">wikipedia</a>.</li>
+        </ul>
+      </section>                
+    </main>
+  </body>
+</html>
